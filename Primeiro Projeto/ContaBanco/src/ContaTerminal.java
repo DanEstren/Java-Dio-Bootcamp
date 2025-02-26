@@ -20,10 +20,21 @@ import java.util.Scanner;
 
         ContaTerminal contas = new ContaTerminal(null, null, 0, 0);
 
-        System.out.println("Selecione a opção \n1-MudarNome");
+        System.out.println("Por favor, digite o número da Agência !");
+        contas.NumeroConta = scanner.nextInt();
 
-        String NomeCliente = scanner.nextLine();
-        contas.mudarNome(NomeCliente);
+        System.out.println("Por favor, digite a Agência !");
+        contas.Agencia = scanner.next();
+        scanner.nextLine();
+
+        System.out.println("Por favor, digite o nome do Cliente !");
+        contas.NomeCliente = scanner.nextLine();
+
+        System.out.println("Por favor, digite o Saldo do Cliente !");
+        contas.Saldo = scanner.nextDouble();
+
+        System.out.println("Olá "+contas.NomeCliente+", obrigado por criar uma conta em nosso banco, sua agência é "+contas.Agencia+", conta "+contas.NumeroConta+" e seu saldo "+contas.Saldo+" já está disponível para saque");
+        
     }
 
     void voltarNome(){
