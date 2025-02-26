@@ -34,32 +34,9 @@ import java.util.Scanner;
         contas.Saldo = scanner.nextDouble();
 
         System.out.println("Olá "+contas.NomeCliente+", obrigado por criar uma conta em nosso banco, sua agência é "+contas.Agencia+", conta "+contas.NumeroConta+" e seu saldo "+contas.Saldo+" já está disponível para saque");
+
+        scanner.close();
         
-    }
-
-    void voltarNome(){
-
-        System.out.println(NomeCliente);
-    }
-
-    void mudarNome(String NovoNome){
-
-        try{
-            
-            this.NomeCliente = NovoNome;
-    
-            System.out.println("Nome alterado com Sucesso para "+NovoNome);
-        }
-
-        catch (Exception e){
-            System.out.println("Falha ao Alterar o nome");
-        }
-
-
-    }
-
-    int voltarNumero(){
-        return this.NumeroConta;
     }
 
     
